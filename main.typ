@@ -2,6 +2,8 @@
 #show: uni_style
 
 #show figure.where(kind: table): set par(leading: 0.5em)
+#show figure.where(kind: table): set block(breakable: true)
+#show figure.where(kind: table): set figure.caption(position: top)
 
 #let section_header(body, numbering: "1", outlined: true) = {
   [
@@ -243,13 +245,9 @@ MES2300-24. Данные устройства являются функцион�
 #figure(
   table(
     columns: (1fr, 1.5fr),
-    stroke: none,
-    align: (left, left),
-    table.hline(stroke: 0.5pt),
     table.header(
       [*Параметр*], [*Значение*]
     ),
-    table.hline(stroke: 0.5pt),
     [Тип сети], [Gigabit Ethernet / 10 Gigabit Ethernet],
     [Количество базовых портов], [24 × 10/100/1000BASE-T (RJ-45)],
     [Количество портов UPLINK], [4 × 10GBASE-R (SFP+) / 1000BASE-X (SFP)],
@@ -266,7 +264,6 @@ MES2300-24. Данные устройства являются функцион�
     [Электропитание], [100–240 В AC, 50–60 Гц\ Максимальная потребляемая мощность: 20 Вт],
     [Габариты (Ш × В × Г)], [430 × 44 × 204 мм],
     [Масса], [2,94 кг],
-    table.hline(stroke: 0.5pt),
   ),
   caption: [Технические характеристики коммутатора доступа MES2300-24]
 )
@@ -286,13 +283,9 @@ MES2300-24. Данные устройства являются функцион�
 #figure(
   table(
     columns: (1fr, 1.5fr),
-    stroke: none,
-    align: (left, left),
-    table.hline(stroke: 0.5pt),
     table.header(
       [*Параметр*], [*Значение*]
     ),
-    table.hline(stroke: 0.5pt),
     [Тип сети], [Gigabit Ethernet / 10 Gigabit Ethernet],
     [Количество базовых портов], [12 × 1000BASE-X/100BASE-FX (SFP)],
     [Дополнительные порты], [4 × Combo 10/100/1000BASE-T/1000BASE-X\ 4 × 10GBASE-R (SFP+)/1000BASE-X],
@@ -305,7 +298,6 @@ MES2300-24. Данные устройства являются функцион�
     [Электропитание], [100–240 В AC, 50–60 Гц; 36–72 В DC\ Максимальная потребляемая мощность: 37 Вт],
     [Габариты (Ш × В × Г)], [430 × 44 × 305 мм],
     [Масса], [4,89 кг],
-    table.hline(stroke: 0.5pt),
   ),
   caption: [Технические характеристики коммутатора агрегации MES3300-16F]
 )
@@ -328,13 +320,9 @@ IP-сетей.
 #figure(
   table(
     columns: (1fr, 1.5fr),
-    stroke: none,
-    align: (left, left),
-    table.hline(stroke: 0.5pt),
     table.header(
       [*Параметр*], [*Значение*]
     ),
-    table.hline(stroke: 0.5pt),
     [Тип устройства], [Сервисный маршрутизатор],
     [Интерфейсы], [4 × Combo 10/100/1000BASE-T/1000BASE-X (SFP)\ 8 × 10GBASE-R (SFP+)/1000BASE-X (SFP)\ 1 × консольный порт RS-232 (RJ-45), 1 × OOB],
     [Производительность Firewall/маршрутизации], [до 39,0 Гбит/с (фреймы 1518В)],
@@ -348,7 +336,6 @@ IP-сетей.
     [Электропитание], [100–240 В AC, 50–60 Гц; 36–72 В DC\ Максимальная потребляемая мощность: 235 Вт],
     [Габариты (Ш × В × Г)], [440 × 88 × 490 мм],
     [Масса], [11,635 кг],
-    table.hline(stroke: 0.5pt),
   ),
   caption: [Технические характеристики маршрутизатора ESR-1700]
 )
@@ -376,8 +363,6 @@ IP-сетей.
 }
 
 #V()
-#show figure.where(kind: table): set block(breakable: true)
-#show figure.where(kind: table): set figure.caption(position: top)
 #figure(
   caption: [Распределение адресов],
   table(
